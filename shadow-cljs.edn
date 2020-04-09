@@ -1,0 +1,7 @@
+{:source-paths ["src"]
+ :dependencies [[reagent "0.10.0"]]
+ :dev-http     {8080 "target/"}
+ :builds       {:app {:output-dir "target/"
+                      :asset-path "."
+                      :target     :browser
+                      :modules    {:main {:entries [app.core]}}}}}
